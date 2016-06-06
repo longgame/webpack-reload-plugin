@@ -12,7 +12,7 @@ WebpackReloadPlugin.prototype.apply  = function(compiler){
     if(!this.ip) return;
 
     var entry = compiler.options.entry;
-    var reload = "webpack-dev-server/client?http://"+this.ip+":8080/";
+    var reload = "webpack-dev-server/client?http://"+this.ip+":9000/";
 
     // string
     if(typeof entry === "string"){
